@@ -1,0 +1,71 @@
+        /* Table styling------------------------------------------------------------------- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+
+        /* -------------------------------- */
+        #myInput {
+            /* background-image: url('/css/searchicon.png'); */
+            background-position: 10px 12px;
+            background-repeat: no-repeat;
+            width: 100%;
+            font-size: 16px;
+            padding: 12px 20px 12px 40px;
+            border: 1px solid #ddd;
+            background-color: rgba(143, 176, 143, 0.365);
+            margin-bottom: 12px;
+        }
+
+        #myInput:focus {
+            border: none;
+            outline: none;
+            border-bottom: 4px solid green;
+        }
+
+        /* -------------------------------- */
+
+        #productTable,
+        #billsTable,
+        #categTable,
+        #orderTable {
+            border-collapse: collapse;
+            width: 100vw;
+            border: 1px solid #ddd;
+            font-size: 18px;
+            overflow: scroll;
+        }
+
+        #productTable th,
+        #billsTable th,
+        #orderTable th,
+        #categTable th,
+        #productTable td,
+        #billsTable td,
+        #categTable td,
+        #orderTable td {
+            text-align: left;
+            padding: 12px;
+        }
+
+        #productTable tr,
+        #billsTable tr,
+        #categTable tr,
+        #orderTable tr {
+            border-bottom: 1px solid #ddd;
+        }
+
+
+        #billsTable tr.header,
+        #productTable tr.header,
+        #orderTable tr.header,
+        #categTable tr.header,
+        #billsTable tr:hover,
+        #categTable tr:hover,
+        #orderTable tr:hover,
+        #productTable tr:hover {
+            background-color: #f1f1f1;
+        }

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard</title>
+
+    <!-- fonts: -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- google material icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- css -->
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/leftTab.css">
+    <link rel="stylesheet" href="/css/card.css">
+    <link rel="stylesheet" href="/css/manage_prod_list_filter.css">
+    <link rel="stylesheet" href="/css/delt_edit_icon.css">
+    <link rel="stylesheet" href="/css/table.css">
+    <link rel="stylesheet" href="/css/toggle_btn.css">
+    <link rel="stylesheet" href="/css/modal.css">
+    <link rel="stylesheet" href="/css/alertMessages.css">
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+</head>
+
+<body>
+
+
+    <!-- navbar -->
+    <%- include('../partials/navbar'); %>
+        <!-- left navigation panel -->
+        <%- include('../partials/verticalTab'); %>
+            <!-- alert messages -->
+            <%- include('../partials/alertMessages'); %>
+                <!-- add product modal -->
+                <%- include('../partials/add_prod_modal'); %>
+                    <!-- edit product modal -->
+                    <%- include('../partials/edit_prod_modal'); %>
+                        <!-- place order modal -->
+                        <%- include('../partials/place_order_modal'); %>
+                            <!-- add category modal -->
+                            <%- include('../partials/add_categ_modal'); %>
+
+
+                                <!-- frontend scripts -->
+                                <script src="/JS/alertMessage.js"></script>
+                                <script src="/JS/left_panel_navigation.js"></script>
+                                <script src="/JS/table_prod_filter.js"></script>
+                                <script src="/JS/close_modal.js"></script>
+                                <script src="/JS/populate_price.js"></script>
+                                <script src="/JS/update_total_price.js"></script>
+                                <script src="/JS/add_to_cart.js"></script>
+                                <script src="/JS/populate_order_table.js"></script>
+                                <script src="/JS/populate_bill_total.js"></script>
+                                <script src="/JS/remove_item.js"></script>
+                                <script src="/JS/bills_table_filter.js"></script>
+                                <script src="/JS/filter_categ_table.js"></script>
+
+
+                                <!-- fetch api scripts -->
+                                <script src="/fetch/fetch_prod_for_order.js"></script>
+                                <script src="/fetch/add_prod.js"></script>
+                                <script src="/fetch/add_prod_modal.js"></script>
+                                <script src="/fetch/edit_prod.js"></script>
+                                <script src="/fetch/fetch_all_prod.js"></script>
+                                <script src="/fetch/toggle_inStock.js"></script>
+                                <script src="/fetch/delet_prod.js"></script>
+                                <script src="/fetch/edit_prod_modal.js"></script>
+                                <script src="/fetch/place_order.js"></script>
+                                <script src="/fetch/fetch_all_bills.js"></script>
+                                <script src="/fetch/fetch_all_category.js"></script>
+                                <script src="/fetch/add_category.js"></script>
+                                <script src="/fetch/delete_category.js"></script>
+
+
+</body>
+
+</html>

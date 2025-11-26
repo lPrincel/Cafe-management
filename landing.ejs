@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="/css/landing.css">
+    <link rel="stylesheet" href="/css/modal.css">
+
+    <title>Ayush Cafe</title>
+</head>
+
+
+<body id="landing_body">
+    <h1 id="landing_heading">AYUSH CAFE</h1>
+    <div id="landing_btn_div">
+        <button onclick="document.getElementById('id01').style.display='block'">Login</button>
+        <button onclick="document.getElementById('id02').style.display='block'">Signup</button>
+        <button onclick="document.getElementById('id03').style.display='block'">Verify Email</button>
+    </div>
+
+    <%- include('../partials/login_modal'); %>
+        <%- include('../partials/signup_modal'); %>
+            <%- include('../partials/forgot_pass_modal'); %>
+
+                <!-- modal window script -->
+                <script src="/JS/close_modal.js"></script>
+                <script src="/fetch/signup.js"></script>
+                <script src="/fetch/login.js"></script>
+                <script src="/fetch/verify_email.js"></script>
+
+
+</body>
+
+</html>
